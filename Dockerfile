@@ -1,8 +1,8 @@
 FROM openjdk:11.0-jdk-slim
 VOLUME /tmp
-COPY /target/OrderServiceMS-0.0.1-SNAPSHOT.jar /usr/app/   
+COPY /target/order-0.0.1-SNAPSHOT.jar /usr/app/    order
 WORKDIR /usr/app
 EXPOSE 8200
 ENV JAVA_OPTS=""
-RUN sh -c "touch OrderServiceMS-0.0.1-SNAPSHOT.jar"
-ENTRYPOINT [ "java", "-jar", "OrderServiceMS-0.0.1-SNAPSHOT.jar" ]
+RUN sh -c "touch order-0.0.1-SNAPSHOT.jar"
+ENTRYPOINT [ "java", "-jar", "order-0.0.1-SNAPSHOT.jar" ]
