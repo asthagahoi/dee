@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   secrets-manager:
-    LOGIN: SonarCredentialsOrder:sonartoken
+    LOGIN: SonarCredentials:sonartoken
     HOST: SonarCredentials:host
     Organization: SonarCredentials:organization
     Project: SonarCredentials:projectKey
